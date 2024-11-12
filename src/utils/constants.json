@@ -1,0 +1,6 @@
+{
+    "token_endpoint": "https://accounts.spotify.com/api/token",
+    "grant_type": "client_credentials", 
+    "client_id": "fc02ec921b6549e7bd418d3538bb5e3c",
+    "client_secret": "a2e0304bc65d474685d9c8f1821fd685"
+}
