@@ -42,7 +42,7 @@ function App() {
                   <Track 
                     item={item} 
                     index={index} 
-                    key={item.track.id}
+                    key={item.id}
                   />
                 )
               })

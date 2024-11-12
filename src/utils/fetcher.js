@@ -50,7 +50,20 @@ export default function useFetch(url){
 }
 
 const cleanList = (list) => {
-    return list.tracks.items
+    return list.tracks.items.map(item => {
+        return {
+            id: item.track.id,
+            name: item.track.name,
+            img_url: item.track.album.images[0].url,
+            spotify_url: item.track.external_urls.spotify,
+            artists: item.track.album.artists.map(artist => {
+                return {
+                    id: artist.id,
+                    name: artist.name
+                }
+            })
+        }
+    })
 }
 
 const fetchData = async (url) => {
